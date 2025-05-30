@@ -91,6 +91,7 @@ header {
 
 .day-detail {
   padding: 1rem;
+  justify-content: center;
 }
 
 .banner-img {
