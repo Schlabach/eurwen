@@ -1,0 +1,156 @@
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+#login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30vh;
+}
+
+input[type="password"] {
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+header {
+  background: #0070f3;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.subheading {
+  font-size: 1rem;
+  margin-top: 0.25rem;
+}
+
+.itinerary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.day-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.day-card:hover {
+  transform: translateY(-4px);
+}
+
+.day-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.day-card h2 {
+  margin: 0.5rem 1rem 0 1rem;
+}
+
+.day-card p {
+  margin: 0.25rem 1rem 1rem 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+@media screen and (max-width: 480px) {
+  .day-card p {
+    font-size: 0.85rem;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+  .subheading {
+    font-size: 0.9rem;
+  }
+}
+
+.day-detail {
+  padding: 1rem;
+}
+
+.banner-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.section h2 {
+  margin-bottom: 0.5rem;
+  color: #0070f3;
+}
+
+.section ul {
+  padding-left: 1.2rem;
+}
+
+.section ul li {
+  margin-bottom: 0.5rem;
+}
+
+.section a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.section a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 480px) {
+  .banner-img {
+    height: 150px;
+  }
+}
+
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem auto;
+}
+
+.nav-buttons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.nav-buttons button:hover {
+  background: #0059c1;
+}

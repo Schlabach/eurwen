@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Europe Trip Itinerary</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="login-container">
+      <h2>Enter Password to View Itinerary</h2>
+      <input type="password" id="password" placeholder="Password" />
+      <button onclick="checkPassword()">Enter</button>
+    </div>
+
+    <div id="main-content" style="display: none">
+      <header>
+        <h1>Europe Trip 2025</h1>
+        <p class="subheading">
+          June 27 – July 11 | Berlin • Munich • Wengen • Amsterdam & more
+        </p>
+      </header>
+      <section class="itinerary-grid">
+        <div class="day-card" onclick="navigateTo('days/jun27.html')">
+          <img src="images/air-canada.jpg" alt="Airplane" />
+          <h2>June 27 – Flight</h2>
+          <p>
+            We are flying from the US to Berlin, Germany(Cleveland -> Toronto ->
+            Frankfurt -> Berlin). Arrive in the morning of the 28th.
+          </p>
+        </div>
+        <div class="day-card" onclick="navigateTo('days/jun28.html')">
+          <img src="images/berlin-wall.jpg" alt="Berlin Wall" />
+          <h2>June 28 – Berlin</h2>
+          <p>Arrive, visit Berlin Wall Memorial, and free time.</p>
+        </div>
+        <div class="day-card" onclick="navigateTo('days/jun29.html')">
+          <img src="images/hop-on-hop-off.jpg" alt="Hop On Hop Off Berlin" />
+          <h2>June 29 – Berlin</h2>
+          <p>
+            Hop-on-hop-off city tour, afternoon Jewish Holocaust Museum, free
+            evening.
+          </p>
+        </div>
+        <div class="day-card" onclick="navigateTo('days/jun30.html')">
+          <img src="images/munich.jpg" alt="Munich" />
+          <h2>June 30 – Munich</h2>
+          <p>
+            High speed train to Munich, Dachau concentration camp, free
+            afternoon, and guided Bavarian food/market tour for dinner.
+          </p>
+        </div>
+        <div class="day-card" onclick="navigateTo('days/jul01.html')">
+          <img src="images/neuschwanstein.jpg" alt="Wengen" />
+          <h2>July 1 – Munich -> Zurich</h2>
+          <p>
+            Early moring to Neuschwanstein castle, travel to Schauffhausen for
+            river cruise to Rhine falls, travel to Zurich.
+          </p>
+        </div>
+        <div class="day-card" onclick="navigateTo('days/jul02.html')">
+          <img src="images/lauterbrunnen.jpg" alt="Lucerne" />
+          <h2>July 2 – Baretswil, Lauterbrynnen, Lucerne, Wengen</h2>
+          <p>
+            Travel to Baretswil, hike to Tauferhohle, travel to Lauterbrunnen,
+            Lunch in Lucerne, cogwheel train to Wengen, free evening.
+          </p>
+        </div>
+        <div class="day-card" onclick="navigateTo('days/jul03.html')">
+          <img src="images/wengen1.jpg" alt="Amsterdam" />
+          <h2>July 3 – Wengen</h2>
+          <p>Free day.</p>
+        </div>
+        <div class="day-card" onclick="navigateTo('days/jul04.html')">
+          <img src="images/wengen2.jpg" alt="Keukenhof" />
+          <h2>July 4 – Wengen</h2>
+          <p>Free day.</p>
+        </div>
+        <div class="day-card" onclick="navigateTo('days/jul05.html')">
+          <img src="images/trachselwald.jpg" alt="Bruges" />
+          <h2>July 5 – Wengen -> Bern</h2>
+          <p>
+            Visit Wenger homestead, Rothenbach im Emmental, Schallenberg Pass,
+            travel to Trub, visit Hinter Hutten, Trachselwald castle, and travel
+            to Bern.
+          </p>
+        </div>
+        <div class="day-card" onclick="navigateTo('days/jul06.html')">
+          <img src="images/strasbourg.jpg" alt="Paris" />
+          <h2>July 6 – Bern -> Strasbourg</h2>
+          <p>
+            Sightseeing in Bern: Bear Pit, Federal Palace, Medieval Old Town,
+            Parade of painted figures. Travel through French Riesling country to
+            Strasbourg with lunch in Riquewhir.
+          </p>
+        </div>
+        <div class="day-card" onclick="navigateTo('days/jul07.html')">
+          <img src="images/heidelberg.jpg" alt="London" />
+          <h2>July 7 – Strasbourg -> Mainz</h2>
+          <p>
+            Travel to Schafbusch, visit Hege Farm, church in Geisberg, travel to
+            Gasthof zur Rose in Weinheim for lunch, visit Heligkreuz church,
+            free afternoon in Heidelberg, and then travel to Mainz.
+          </p>
+        </div>
+        <div class="day-card" onclick="navigateTo('days/jul08.html')">
+          <img src="images/mainz.jpg" alt="Edinburgh" />
+          <h2>July 8 – Mainz</h2>
+          <p>
+            Travel to St Goar for Rhine River Cruise, return to Mainz after
+            lunch, and free afternoon and evening in Mainz.
+          </p>
+        </div>
+        <div class="day-card" onclick="navigateTo('days/jul09.html')">
+          <img src="images/amsterdam1.jpg" alt="Dublin" />
+          <h2>July 9 – Amsterdam</h2>
+          <p>
+            Travel to Frankfurt for flight to Amsterdam, check in to hotel and
+            free afternoon, Anne Frank House at 7pm.
+          </p>
+        </div>
+        <div class="day-card" onclick="navigateTo('days/jul10.html')">
+          <img src="images/amsterdam2.jpg" alt="Return Flight" />
+          <h2>July 10 – Amsterdam</h2>
+          <p>
+            City tour of the Royal Palace, and a canal tour. afternoon train to
+            Enkhuizen for Zuiderzee and tulip fields.
+          </p>
+        </div>
+        <div class="day-card" onclick="navigateTo('days/jul11.html')">
+          <img src="images/air-canada.jpg" alt="Airplane" />
+          <h2>July 11 – Flight Home</h2>
+          <p>Flight home: Amsterdam -> Toronto -> Cleveland.</p>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      const PASSWORD = "wenger";
+
+      // Automatically show content if password was already entered
+      if (sessionStorage.getItem("auth") === "true") {
+        showContent();
+      }
+
+      function checkPassword() {
+        const entered = document.getElementById("password").value;
+        if (entered === PASSWORD) {
+          sessionStorage.setItem("auth", "true");
+          showContent();
+        } else {
+          alert("Incorrect password. Try again.");
+        }
+      }
+
+      function showContent() {
+        document.getElementById("login-container").style.display = "none";
+        document.getElementById("main-content").style.display = "block";
+      }
+
+      function navigateTo(page) {
+        window.location.href = page;
+      }
+    </script>
+  </body>
+</html>
