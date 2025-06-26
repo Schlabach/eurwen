@@ -1,7 +1,12 @@
 // Redirect to login if not authenticated
-if (sessionStorage.getItem("auth") !== "true") {
-  window.location.href = "/index.html";
-}
+// if (sessionStorage.getItem("auth") !== "true") {
+//   window.location.href = "/index.html";
+// }
+
+// Always show main content
+document.addEventListener("DOMContentLoaded", () => {
+  showContent();
+});
 
 // Page navigation function
 function goTo(page) {
